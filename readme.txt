@@ -34,3 +34,8 @@ into Infrastructure
 13.dotnet add reference ../Core
 into skinet
 14.dotnet restore
+
+
+15. dotnet ef database drop -p Infrastructure -s API
+16. dotnet ef migrations remove -p Infrastructure -s API
+17. dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
