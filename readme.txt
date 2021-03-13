@@ -3,12 +3,16 @@ dotnew new SLN
 
 2.CREATE API
 DOTNET NEW WEBAPI -o FOLDERNAME
+
 3.ADD API TO SLN
 DOTNET SLN ADD API
+
 4.dev-certs
 dotnet dev-certs https -t
+
 5.in folder API
 dotnet tool list -g
+
 dotnet tool install --global dotnet-ef --version 5.0.4
 from nuget Galley
 
@@ -19,6 +23,7 @@ and should be install Microsoft.EntityFrameworkCore.Design
 7.dotnet ef database update
 
 skinet folder
+
 8.dotnet new classlib -o Core
 
 9.dotnet new classlib -o Infrastructure
